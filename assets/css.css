@@ -1,0 +1,104 @@
+body {
+    font-family: 'Noto Sans',sans-serif;
+}
+
+.judul {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-main{
+    background-image: url("HDR1-10.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.bg-layanan{
+    background-image: url("BG4-1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.bg-main::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212529;
+    opacity: 0.65;
+}
+
+header .navbar {
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+}
+
+.bg-overlay{
+    background-color: #191919;
+    opacity: 0.65;
+    height: 100%;
+}
+
+.layanan {
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.divid{
+    width: 64%;
+    border-color: #fb2056;
+    border-width: 2px;
+    text-align: center;
+}
+
+.judul_main h1 {
+    font-size: 64px;
+}
+.judul_main h3 {
+    font-size: 24px;
+}
+
+.penggunaan{
+    font-size: 14pt;
+    list-style-type: none;
+}
+.penggunaan ul{
+    list-style-type: none;
+}
+.penggunaan li{
+    padding-bottom: 2px;
+}
+
+.menu a{
+    margin-bottom: 15px;
+    white-space: pre-wrap;
+    border-width: medium; 
+    padding: 20px 10px; 
+    width: 50%;
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .judul_main h1 {
+        font-size: 42px;
+    }
+    .judul_main h3 {
+        font-size: 18px;
+    }
+    .bg-main{
+        height: 80vh;
+    }
+
+    .menu a{
+        width: 100%;
+    }
+ }
